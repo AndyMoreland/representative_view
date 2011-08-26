@@ -26,7 +26,7 @@ module RepresentativeView
       when /json/
         ::Representative::JSON.new(nil, RepresentativeView.json_options)
       else
-        raise "Representative cannot generate #{format}"
+        ::Representative::JSON.new(nil, RepresentativeView.json_options)
       end
     end
 
